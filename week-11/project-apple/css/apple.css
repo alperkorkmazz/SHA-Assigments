@@ -1,0 +1,27 @@
+.ana{
+    background-image: url('../img/your_verse_hero.jpg');
+    background-repeat: no-repeat;
+    grid-column: 1/4/1/4;
+    grid-row:1/11;
+    background-size: contain;                     
+}
+.container{
+    grid-gap: 5px;
+    display:grid;
+    grid-template-columns:33% 33% 33%;
+    grid-template-rows: repeat(15,1fr);
+    background-size:cover; 
+}
+.anayazi{
+    color: linear-gradient(red,green);
+    font-size: 90px;
+    color:white;
+}
+
+.s5{
+    background-image:url('../img/promo_iphone5s.jpg');
+    background-repeat: no-repeat;
+    grid-column: 1;
+    grid-row:11/14;
+    background-size:contain;
+}
