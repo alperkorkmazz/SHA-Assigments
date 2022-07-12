@@ -1,8 +1,9 @@
 .ana{
+    display:grid;
     text-align:center;
     grid-column: 1;
     grid-row: 1/8;  
-    display:grid;
+    
   
 }
 .container{
@@ -11,6 +12,7 @@
     grid-template-rows: repeat(10,1fr);
     grid-gap:2px;
     grid-template-columns: repeat(8,1fr);
+    width:100%;
 }
 .alt{
     grid-column: 1;
@@ -39,21 +41,23 @@
     grid-row:1;
 }
 .anayazi{
-    color: linear-gradient(red,green);
     font-size: 90px;
     color:white;
-    position:absolute;
-    top:400px;
-    left:600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .mainnav{
     display:grid;
     grid-template-columns: repeat(9,1fr);
-    top: 600px;
+    height: 50px;
+
 }
-[class="nav$"]{
+[class^="nav"]{
     background-color:rgba(122,120,125);
     color:rgba(122,120,125);
+
 }
 
 
