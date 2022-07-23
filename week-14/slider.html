@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+
+<body>
+    <div class="slideshow">
+        <div class="slide">
+            <img src="./img/bernd-dittrich-5h2S3PT6DOk-unsplash.jpg" alt="Picture 1" class="slide-bild">
+            <div class="slide-text-bereich">
+                <h3 class="slide-title">
+                    Picture 1
+                </h3>
+                <p class="slide-definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                    assumenda eos. Voluptate earum molestias eos!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./img/daniel-sessler-oyXYkH0jxJY-unsplash.jpg" alt="Picture 1" class="slide-bild">
+            <div class="slide-text-bereich">
+                <h3 class="slide-title">
+                    Picture 2
+                </h3>
+                <p class="slide-definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                    assumenda eos. Voluptate earum molestias eos!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./img/joshua-dixon-a8z-_zbwO84-unsplash.jpg" alt="Picture 1" class="slide-bild">
+            <div class="slide-text-bereich">
+                <h3 class="slide-title">
+                    Picture 3
+                </h3>
+                <p class="slide-definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                    assumenda eos. Voluptate earum molestias eos!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./img/julien-riedel-N3tQbBFGQVU-unsplash.jpg" alt="Picture 1" class="slide-bild">
+            <div class="slide-text-bereich">
+                <h3 class="slide-title">
+                    Picture 4
+                </h3>
+                <p class="slide-definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                    assumenda eos. Voluptate earum molestias eos!</p>
+            </div>
+        </div>
+        <a href="" class="arrow arrow-left" onclick="changeImage(-1)"><span>&#10094;</span></a>
+        <a href="" class="arrow arrow-right" onclick="changeImage(1)"><span>&#10095;</span></a>
+        
+        <ol class="indicator-list">
+            <li class="indicator" onclick="springToImage(0)">&#8226;</li>
+            <li class="indicator" onclick="springToImage(1)">&#8226;</li>
+            <li class="indicator" onclick="springToImage(2)">&#8226;</li>
+            <li class="indicator" onclick="springToImage(3)">&#8226;</li>
+        </ol>
+    </div>
+   <script src="./js/js.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
