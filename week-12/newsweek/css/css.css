@@ -142,3 +142,8 @@ li {
   .h5{
     color:grey;
   }
+  .main{
+    width:100%;
+    display:flex;
+
+  }

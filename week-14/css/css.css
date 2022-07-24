@@ -21,32 +21,33 @@ body{
     bottom:0;
     overflow: hidden;
     opacity:0;
-    transition: opacity 2s;
+    transition: opacity 2s ;
 }
-.slide-bild{
+.slide-image{
     width:100%;
+    height:100%;
 }
-.slide-text-bereich{
+.slide-text-field{
     position:absolute;
     left:0;
     right:0;
-    bottom:0;
-    top:70%;
+    top:0;
+    bottom:65%;
     color:aliceblue;
     background-color:rgba(0,0,0,0.5);
     text-align:center;
-    font-family: sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0 15% 0 15%;
 }
 .slide-title{
     font-size: 2em;
 }
 .slide-definition{
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 .arrow{
     position:absolute;
-    color:rgba(255,255,255,0.5);
+    color:rgba(230, 240, 86, 0.5);
     top:0;
     bottom:0;
     font-size:40px;
@@ -58,6 +59,7 @@ body{
     width:15%;
     user-select:none;
     cursor: pointer;
+    text-decoration: none;
 }
 .arrow:hover{
     color:aliceblue;
@@ -70,7 +72,7 @@ body{
 }
 .indicator-list{
     position:absolute;
-    top:0;
+    bottom:0;
     left:0;
     right:0;
     list-style-type: none;
@@ -79,6 +81,7 @@ body{
     justify-content: center;
     margin:0;
     padding:0;
+    color: yellow;
 }
 .indicator{
     padding:0 10px;
@@ -88,4 +91,7 @@ body{
 }
 .active{
     opacity:1;
+}
+body{
+    background-image: linear-gradient( rgb(177, 202, 202),rgb(197, 204, 205));
 }
