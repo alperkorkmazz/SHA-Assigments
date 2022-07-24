@@ -1,9 +1,8 @@
 
-var actualIndex  ;
-var newIndex;
+var actualIndex ;
+
 if(actualIndex==null){
     actualIndex=0;
-    newIndex=0;
 }
 const indicators = document.getElementsByClassName("indicator");
 indicators[actualIndex].classList.add("active");
@@ -11,18 +10,18 @@ indicators[actualIndex].classList.add("active");
 const slides = document.getElementsByClassName("slide");
 slides[actualIndex].classList.add("active")
 
-
+/*document.getElementById("arrowl").addEventListener("click",function (){
+    console.log("hi");
+});*/
 
 function changeImage(step){
-    newIndex = actualIndex+step;
-    if(newIndex<0){
-        newIndex=indicators.length-1;
+    var newIndex = actualIndex+step;
+    if(newIndex < 0){
+        newIndex = slides.length-1;
     }
-    if(newIndex>indicators.length-1){
-        newIndex=0;
+    if(newIndex > slides.length-1){
+        newIndex = 0;
     }
-    console.log(newIndex);
-    console.log(actualIndex);
     springToImage(newIndex); 
 }
 
@@ -32,6 +31,5 @@ function springToImage(newIndex) {
     indicators[newIndex].classList.add("active");
     slides[newIndex].classList.add("active");
     actualIndex = newIndex;
-
 }
 
